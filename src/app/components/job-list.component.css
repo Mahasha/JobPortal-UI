@@ -1,0 +1,64 @@
+/* Container for the job list */
+.job-list-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Job card style */
+.job-card {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Job title style */
+.job-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Job description style */
+.job-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Job details style */
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.job-details span {
+  margin-right: 10px;
+}
+
+/* Apply button style */
+.apply-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}

@@ -1,21 +1,24 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { JobListComponent } from './components/job-list.component';
-import { HttpClientModule } from '@angular/common/http';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
-    JobListComponent // Add your component here
+    JobListComponent
   ],
   imports: [
+    RouterModule,
     BrowserModule,
-    AppRoutingModule, // Import AppRoutingModule
-    HttpClientModule // Ensure HttpClientModule is imported
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
