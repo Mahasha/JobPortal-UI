@@ -1,27 +1,55 @@
-# JobPortalUI
+Job Portal Application (Front-End)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+Overview
+The Job Portal Application is designed to connect job seekers with potential employers. It provides a seamless experience for users to search for jobs, apply for positions, and manage their applications. Recruiters can post job listings, review applications, and manage their recruitment process.
 
-## Development server
+Features
+User authentication and authorization
+Job search and filtering
+Job application submission and tracking
+Recruiter job posting and management
+Role-based access control
+Responsive design for mobile and desktop
+Technologies Used
+Backend: Java 22, Spring Boot, Spring Data JPA, Spring Security, Lombok
+Frontend: Angular
+Database: PostgreSQL
+Tools: Maven, Git, Docker
+Getting Started
+Prerequisites
+JDK 22
+Node.js and npm
+PostgreSQL
+Docker (optional for containerized deployment)
+Installation
+Clone the repository
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+git clone https://github.com/mahasha/job-portal.git
+cd job-portal
+Backend Setup
 
-## Code scaffolding
+Navigate to the backend directory:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+cd backend
+Update the application.properties with your PostgreSQL configuration:
 
-## Build
+spring.datasource.url=jdbc:postgresql://localhost:5432/jobportal
+spring.datasource.username=yourusername
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+Build and run the backend application:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+mvn clean install
+mvn spring-boot:run
+Frontend Setup
 
-## Running unit tests
+Navigate to the frontend directory:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+cd frontend
+Install dependencies and run the Angular application:
 
-## Running end-to-end tests
+npm install
+ng serve
+Access the Application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Open your browser and navigate to http://localhost:4200 for the frontend and http://localhost:8080 for the backend.
